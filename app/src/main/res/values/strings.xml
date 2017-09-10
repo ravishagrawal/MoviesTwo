@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MoviesTwo</string>
+    <string name="sample_movie_title">Movies One</string>
+    <string name="sample_release_date">27/12/2017</string>
+    <string name="sample_movie_rating">8.2/10</string>
+    <string name="sample_poster_content">This is a poster description</string>
+    <string name="sample_movie_synopsis"> This is a movie which has some synopsis and i of-course cannot write it</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="favorites">Favorites</string>
+    <string name="error_message">An error  occurred</string>
+    <string name="movie_detail">Movie Detail</string>
+    <string name="please_supply_id">Please supply an ID</string>
+    <string name="mark_as_favorite">Mark as Favorite</string>
+    <string name="trailers_colon">Trailers:</string>
+    <string name="thumbnail_image">Thumbnail Image</string>
+    <string name="runtime_formatted">%smin</string>
+    <string name="rating_formatted">%s/10</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="api_key_not_set">Please insert an API key</string>
+    <string name="try_again">Try again</string>
+    <string name="sort">Sort</string>
+    <string name="type_not_supported">This type of video can\'t be handled yet</string>
+    <string name="removed_from_favorites">Removed from favorites</string>
+    <string name="marked_as_favorite">Marked as favorite</string>
+    <string name="yet_not_favorited">No favorites found!</string>
+    <string name="reviews_colon">Reviews:</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="API_KEY"></string>
+</resources>

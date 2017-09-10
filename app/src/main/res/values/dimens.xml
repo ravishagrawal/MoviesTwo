@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heading_medium_size">22sp</dimen>
+    <dimen name="heading_sub_medium_size">20sp</dimen>
+    <dimen name="standard_padding">10dp</dimen>
+    <dimen name="detail_container_margin">5dp</dimen>
+</resources>

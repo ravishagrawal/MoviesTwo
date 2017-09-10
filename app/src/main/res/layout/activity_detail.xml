@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.moviestwo.DetailActivity">
+
+    <ScrollView
+        android:id="@+id/sv_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/imageview_poster"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:contentDescription="@string/sample_poster_content" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="2dp"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:id="@+id/textview_movie_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/sample_movie_title"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/textview_release_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/sample_release_date"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textview_ratings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/sample_movie_rating"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textview_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/sample_movie_rating"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/btn_mark_favorite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:onClick="markAsFavorite"
+                        android:src="@drawable/ic_favorite_border_black_24dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView_synopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/standard_padding"
+                android:paddingTop="@dimen/standard_padding"
+                android:text="@string/sample_movie_synopsis"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/trailer_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/detail_container_margin"
+                android:layout_marginTop="@dimen/detail_container_margin"
+                android:paddingLeft="@dimen/standard_padding"
+                android:paddingRight="@dimen/standard_padding"
+                android:text="@string/trailers_colon"
+                android:textSize="@dimen/heading_medium_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/detail_container_margin"
+                android:layout_marginTop="@dimen/detail_container_margin"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/standard_padding"
+                android:paddingRight="@dimen/standard_padding">
+
+                <ImageView
+                    android:id="@+id/iv_trailer_play_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_play_circle_filled_black_24dp" />
+
+                <TextView
+                    android:id="@+id/tv_trailer_name_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/heading_sub_medium_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_review_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/detail_container_margin"
+                android:layout_marginTop="@dimen/detail_container_margin"
+                android:paddingLeft="@dimen/standard_padding"
+
+                android:text="@string/reviews_colon"
+                android:textSize="@dimen/heading_medium_size" />
+
+
+            <TextView
+                android:id="@+id/tv_review_author_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/standard_padding"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_review_content_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingLeft="@dimen/standard_padding" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:indeterminate="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_detail_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_message"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_try_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_detail_error"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/try_again"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</FrameLayout>
